@@ -1,15 +1,17 @@
 <%= simple_form_for @event, remote: true do |f| %>
   <div class="form-inputs">
+    <%= f.input :event_type, as: :radio_buttons, collection: ['SNI', 'Trans'] %>
     <%= f.input :organization %>
     <%= f.input :date_range, input_html: { class: "form-control input-sm date-range-picker" } %>
     <%= f.input_field :start, as: :hidden, value: Date.today, class: 'form-control input-sm start_hidden' %>
     <%= f.input_field :end, as: :hidden, value: Date.today, class: 'form-control input-sm end_hidden' %>
-    <%= f.input :vehicle, as: :select, collection: [['Citra Trans','citra trans'], ['Red White','red white'], ['Tronton','tronton']] %>
+    <%= f.input :location, as: :select, collection: ['Riverside','Lakeside','Seaside'] %>
+    <%= f.input :vehicle, as: :select, collection: ['Citra Trans', 'Red White', 'Tronton'] %>
     <%= f.input :note %>
   </div>
 
   <div class="form-actions">
-    <%= f.button :submit %>
+    <%= f.button :submit, "Save", class: 'btn btn-primary' %>
     <%= link_to 'Delete',
                 event,
                 method: :delete,

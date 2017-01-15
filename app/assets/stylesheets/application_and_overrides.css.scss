@@ -876,10 +876,7 @@ img {
   @extend .img-responsive;
   margin: 0 auto;
   }
-// override for the 'Home' navigation link
-.navbar-brand {
-  font-size: inherit;
-  }
+
 
 // THESE ARE EXAMPLES YOU CAN MODIFY
 // create your own classes
@@ -949,3 +946,22 @@ section {
   @extend .btn-primary;
   @extend .btn-xs;
 }
+
+
+
+  #logo {
+    float: left;
+    margin-right: 10px;
+    font-size: 1.7em;
+    text-transform: uppercase;
+    letter-spacing: -1px;
+    font-weight: bold;
+    &:hover {
+      text-decoration: none;
+    }
+  }
+
+  .navbar-default .navbar-nav > li > a {
+    color: #999999;
+    font-weight: bold;
+  }
