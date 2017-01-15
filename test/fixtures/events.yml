@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  organization: MyString
+  start: 2016-11-19 22:28:13
+  end: 2016-11-19 22:28:13
+  vehicle: MyString
+  note: MyText
+
+two:
+  organization: MyString
+  start: 2016-11-19 22:28:13
+  end: 2016-11-19 22:28:13
+  vehicle: MyString
+  note: MyText
