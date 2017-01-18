@@ -965,3 +965,18 @@ section {
     color: #999999;
     font-weight: bold;
   }
+
+  a.btn.btn-xs.btn-success {
+    padding: 5px 8px;
+    margin: 10px;
+    color: #ffffff !important;
+    font-weight: bold;
+    &:hover {
+      color: #999999;
+      background-color: #449d44;
+      border-color: #398439;
+      font-weight: bold;
+      text-decoration: none;
+
+    }
+  }

@@ -14,7 +14,7 @@ initialize_calendar = function() {
       eventLimit: true,
       allDay: false,
       timeFormat: 'H(:mm)',
-      events: '/events.json',      
+      events: '/events.json',
 
       select: function(start, end) {
         $.getScript('/events/new', function() {
@@ -54,6 +54,7 @@ initialize_calendar = function() {
           $('.end_hidden').val(moment(event.end).format('YYYY-MM-DD HH:mm'));
         });
       }
+
     });
   })
 };
